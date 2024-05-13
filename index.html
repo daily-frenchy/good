@@ -2,28 +2,34 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
-<title>Site de Reportage Photo</title>
+<title>Projet Geo</title>
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <header>
-  <img src="assets/logo.png" alt="Logo du site" id="siteLogo">
-  <h1>Nom du Site</h1>
+  <img src="assets/logo.png" alt="Logo du Projet Geo" id="siteLogo">
+  <nav>
+    <ul>
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="articles/article1.html">Article 1</a></li>
+      <li><a href="articles/article2.html">Article 2</a></li>
+      <!-- Plus de liens vers d'autres articles -->
+    </ul>
+  </nav>
 </header>
 
 <main id="mainContent">
-  <img src="assets/images/photo-centrale.jpg" alt="Photo centrale" id="centralPhoto">
+  <div id="featuredArticle">
+    <img src="assets/images/photo-principale.jpg" alt="Photo Principale" id="mainPhoto">
+    <h2>Titre de l'article en vedette</h2>
+    <p>Description brève de l'article en vedette...</p>
+    <a href="articles/article-vedette.html">Lire la suite</a>
+  </div>
 </main>
 
 <footer>
-  <p>&copy; 2024 Nom du Site</p>
-  <div id="socialIcons">
-    <a href="https://www.facebook.com" target="_blank"><img src="assets/social-icons/facebook.png" alt="Facebook"></a>
-    <a href="https://www.twitter.com" target="_blank"><img src="assets/social-icons/twitter.png" alt="Twitter"></a>
-    <a href="https://www.instagram.com" target="_blank"><img src="assets/social-icons/instagram.png" alt="Instagram"></a>
-    <!-- Plus d'icônes de réseaux sociaux ici -->
-  </div>
+  <p>&copy; 2024 Projet Geo</p>
 </footer>
 
 <script src="js/scripts.js"></script>
