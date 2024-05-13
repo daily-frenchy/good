@@ -31,6 +31,22 @@ function includeNavBar() {
   navBarDiv.appendChild(navBar);
 }
 
+
+// Fonction pour changer la photo centrale aléatoirement
+function changeCentralPhoto() {
+  const photos = [
+    'assets/images/photo1.jpg',
+    'assets/images/photo2.jpg',
+    'assets/images/photo3.jpg',
+    // Ajoutez plus de chemins d'images ici
+  ];
+  const centralPhoto = document.getElementById('centralPhoto');
+  centralPhoto.src = photos[Math.floor(Math.random() * photos.length)];
+}
+
+// Appel de la fonction au chargement de la page
+window.onload = changeCentralPhoto;
+
 // Appel de la fonction pour inclure la barre de navigation
 includeNavBar();
 
