@@ -21,3 +21,17 @@ function displayPhotorama() {
 // Appel des fonctions pour afficher la photo centrale et le photorama
 displayPhotoCentrale();
 displayPhotorama();
+
+
+// Fonction pour inclure la barre de navigation
+function includeNavBar() {
+  const navBarDiv = document.getElementById('navigationBar');
+  const navBar = document.createElement('div');
+  navBar.innerHTML = 'nav.html content'; // Utilisez AJAX ou une méthode similaire pour charger le contenu de nav.html
+  navBarDiv.appendChild(navBar);
+}
+
+// Appel de la fonction pour inclure la barre de navigation
+includeNavBar();
+
+// Autres scripts pour la logique du site
