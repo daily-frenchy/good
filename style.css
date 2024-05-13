@@ -59,3 +59,43 @@ nav ul li a:hover {
 }
 
 /* Ajoutez ici d'autres styles CSS pour personnaliser votre site */
+
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+header {
+  background-color: #f8f8f8;
+  text-align: center;
+  padding: 10px 0;
+}
+
+#siteLogo {
+  width: 100px; /* Ajustez selon la taille de votre logo */
+}
+
+main {
+  text-align: center;
+  margin: 20px 0;
+}
+
+#centralPhoto {
+  max-width: 100%;
+  height: auto;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+#socialIcons img {
+  width: 30px; /* Taille des icônes de réseaux sociaux */
+  margin: 0 10px;
+}
+
+#socialIcons a {
+  display: inline-block;
+}
