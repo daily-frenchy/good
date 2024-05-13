@@ -1,52 +1,20 @@
-// Fonction pour afficher la photo centrale
-function displayPhotoCentrale() {
-  const container = document.getElementById('photoCentraleContainer');
-  const image = document.createElement('img');
-  image.src = photoCentrale.image;
-  image.alt = photoCentrale.alt;
-  container.appendChild(image);
-}
-
-// Fonction pour créer et afficher le photorama
-function displayPhotorama() {
-  const container = document.getElementById('photoramaContainer');
-  photorama.forEach(photo => {
-    const img = document.createElement('img');
-    img.src = photo.image;
-    img.alt = photo.alt;
-    container.appendChild(img);
-  });
-}
-
-// Appel des fonctions pour afficher la photo centrale et le photorama
-displayPhotoCentrale();
-displayPhotorama();
-
-
-// Fonction pour inclure la barre de navigation
-function includeNavBar() {
-  const navBarDiv = document.getElementById('navigationBar');
-  const navBar = document.createElement('div');
-  navBar.innerHTML = 'nav.html content'; // Utilisez AJAX ou une méthode similaire pour charger le contenu de nav.html
-  navBarDiv.appendChild(navBar);
-}
-
-
-// Fonction pour changer la photo centrale aléatoirement
-function changeCentralPhoto() {
-  const photos = [
-    'assets/images/photo1.jpg',
-    'assets/images/photo2.jpg',
-    'assets/images/photo3.jpg',
-    // Ajoutez plus de chemins d'images ici
+// Fonction pour changer l'image centrale de manière aléatoire
+function changeCentralImage() {
+  const images = [
+    'chemin/vers/image1.jpg',
+    'chemin/vers/image2.jpg',
+    'chemin/vers/image3.jpg',
+    // Ajoutez autant de chemins d'images que vous le souhaitez
   ];
-  const centralPhoto = document.getElementById('centralPhoto');
-  centralPhoto.src = photos[Math.floor(Math.random() * photos.length)];
+  const centralImage = document.getElementById('centralPhoto');
+  // Change l'image de manière aléatoire à chaque chargement de la page
+  centralImage.src = images[Math.floor(Math.random() * images.length)];
 }
+
+// Ajoutez d'autres fonctions JavaScript ici selon les besoins de votre site
 
 // Appel de la fonction au chargement de la page
-window.onload = changeCentralPhoto;
-
+document.addEventListener('DOMContentLoaded', changeCentralImage);
 // Appel de la fonction pour inclure la barre de navigation
 includeNavBar();
 
