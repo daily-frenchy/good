@@ -1,0 +1,26 @@
+pour tips ajoiut
+
+
+<!-- a tester , photo centrale + diaporama en dessous sur la page d'index? -->
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Site de Reportage Photo</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="photoCentraleContainer">
+  <!-- La photo centrale sera ajoutée ici -->
+</div>
+
+<div id="photoramaContainer" class="gallery">
+  <!-- Le photorama sera ajouté ici -->
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/scripts.js"></script>
+
+</body> 
